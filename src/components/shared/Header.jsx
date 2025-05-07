@@ -1,8 +1,10 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom"; // Importing Link for routing
+import { Link, useLocation } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
+  const location = useLocation(); // ✅ listen to route change
+
   useEffect(() => {
     const hamburger = document.getElementById("hamburger");
     const menu = document.getElementById("menu");
@@ -15,12 +17,15 @@ const Header = () => {
       hamburger.addEventListener("click", toggleMenu);
     }
 
+    // ✅ Close menu on route change
+    menu.classList.remove("active");
+
     return () => {
       if (hamburger) {
         hamburger.removeEventListener("click", toggleMenu);
       }
     };
-  }, []);
+  }, [location]); // re-run on route change
 
   return (
     <nav>

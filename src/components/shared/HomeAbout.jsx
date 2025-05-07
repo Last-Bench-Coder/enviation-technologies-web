@@ -17,7 +17,7 @@ const HomeAbout = () => {
           a wide spectrum of air pollutants and regulated emissions from virtually all types of
           sources and applications.
         </p>
-        <Link to="/contact" className="read-more-btn">Read More</Link>
+        <Link to="/about" className="read-more-btn">Read More</Link>
       </div>
     </div>
   );
