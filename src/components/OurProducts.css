@@ -1,0 +1,100 @@
+.product-page {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f9fa; /* Light background color for better contrast */
+    padding-top: 150px; /* Increased padding to prevent overlap with header */
+    position: relative; /* Ensure no other element overlaps the content */
+    min-height: 100vh; /* Ensure that the page takes at least the full height of the viewport */
+    overflow: visible; /* Make sure no content is hidden */
+    margin-top: 70px;
+  }
+  
+  .product-title {
+    font-size: 3rem; /* Increased font size for the main title */
+    font-weight: 700;
+    color: #2c3e50;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  
+  .product-subtitle {
+    font-size: 1.3rem; /* Slightly larger subtitle font */
+    color: #6c757d;
+    margin-bottom: 1.5rem;
+  }
+  
+  .section-heading {
+    font-size: 1.75rem; /* Slightly increased font size */
+    color: #00695c;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+  }
+  
+  ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem; /* Increased font size for better readability */
+    color: #34495e;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  .card img {
+    max-width: 100%; /* Ensures images are responsive */
+    border-radius: 8px;
+  }
+  
+  .btn-primary {
+    background-color: #00695c;
+    border: none;
+    padding: 15px 35px;
+    font-size: 20px; /* Larger font size for the button */
+    font-weight: 600;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #004d40;
+  }
+  
+  .text-center {
+    text-align: center;
+    position: relative;
+    z-index: 1; /* Ensure it's on top of the background but beneath any fixed navbars */
+    display: block;
+    visibility: visible; /* Ensure visibility is set to visible */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .product-title {
+      font-size: 2.5rem;
+    }
+  
+    .product-subtitle {
+      font-size: 1.1rem;
+    }
+  
+    .section-heading {
+      font-size: 1.5rem;
+    }
+  
+    ul li {
+      font-size: 1rem;
+    }
+  
+    .btn-primary {
+      font-size: 18px;
+      padding: 12px 30px;
+    }
+  }
+  

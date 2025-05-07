@@ -1,0 +1,92 @@
+/* Navigation Styling */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0077b6;
+  }
+  
+  .menu {
+    display: flex;
+    gap: 25px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #ff6600;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s;
+  }
+  
+  .menu a:hover {
+    color: #e55b00;
+  }
+  
+  .menu a:hover::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ff6600;
+  }
+  
+  /* Mobile View */
+  @media (max-width: 768px) {
+    .menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #fff;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      z-index: 999;
+    }
+  
+    .menu a {
+      padding: 10px;
+      text-align: center;
+      width: 100%;
+      border-top: 1px solid #ddd;
+    }
+  
+    /* Remove the border for the last menu item */
+    .menu a:last-child {
+      border-bottom: none;
+    }
+  
+    .menu.active {
+      display: flex;
+    }
+  
+    /* Show hamburger on mobile only */
+    .hamburger {
+      display: block;
+      cursor: pointer;
+      font-size: 30px;
+      color: #ff6600;
+    }
+  }
+  
+  /* Hide hamburger icon on desktop */
+  @media (min-width: 769px) {
+    .hamburger {
+      display: none;
+    }
+  }
+  

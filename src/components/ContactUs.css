@@ -1,0 +1,69 @@
+.contact-section {
+    background-color: #f8f9fa;
+  }
+  
+  .contact-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #343a40;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-subtitle {
+    font-size: 1.2rem;
+    color: #6c757d;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card .btn {
+    background-color: #00695c;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card .btn:hover {
+    background-color: #004d40;
+  }
+  
+  .card p {
+    font-size: 1.1rem;
+    color: #34495e;
+  }
+  
+  .card .text-primary {
+    color: #00695c;
+  }
+  
+  .card .bi {
+    font-size: 1.5rem;
+  }
+  
+  iframe {
+    border-radius: 8px;
+  }
+  
+  form input, form textarea {
+    font-size: 1rem;
+  }
+  
+  form .btn-primary {
+    padding: 12px 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-title {
+      font-size: 2.5rem;
+    }
+    .contact-subtitle {
+      font-size: 1rem;
+    }
+  }
+  

@@ -1,0 +1,79 @@
+.about-us-container {
+    background-color: #f8f9fa;
+    padding: 80px 15px;  /* Increased padding for more space */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 80px;  /* Added margin-top to avoid overlap with header */
+  }
+  
+  .about-us-container .main-title {
+    font-size: 48px;  /* Increased font size */
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  
+  .about-us-container .sub-title {
+    font-size: 20px;
+    color: #7f8c8d;
+  }
+  
+  .about-us-container .section-title {
+    font-size: 28px;
+    color: #00695c;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .about-us-container .section-text {
+    font-size: 18px;  /* Increased font size for readability */
+    color: #34495e;
+    line-height: 1.8;  /* Increased line-height for better readability */
+  }
+  
+  .about-us-container .section {
+    padding: 30px 0;  /* Increased padding */
+  }
+  
+  .about-us-container .btn-primary {
+    background-color: #00695c;
+    border: none;
+    padding: 15px 35px;
+    font-size: 20px;  /* Larger font size for button */
+    font-weight: 600;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .about-us-container .btn-primary:hover {
+    background-color: #004d40;
+  }
+  
+  .about-us-container img {
+    max-width: 100%;  /* Ensures images are responsive */
+    border-radius: 15px;
+  }
+  
+  @media (max-width: 768px) {
+    .about-us-container .main-title {
+      font-size: 36px;
+    }
+  
+    .about-us-container .sub-title {
+      font-size: 16px;
+    }
+  
+    .about-us-container .section-title {
+      font-size: 24px;
+    }
+  
+    .about-us-container .section-text {
+      font-size: 16px;
+    }
+  
+    .about-us-container .btn-primary {
+      font-size: 18px;
+      padding: 12px 30px;
+    }
+  }
+  

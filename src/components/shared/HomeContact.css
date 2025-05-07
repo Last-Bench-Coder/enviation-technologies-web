@@ -1,0 +1,41 @@
+.section-container {
+    background-color: #e6edf3; /* Professional light bluish-gray */
+    padding: 40px 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 24px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .section-heading {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  .contact-button {
+    display: inline-block;
+    background-color: #ff6600; /* Matching previous button */
+    color: white;
+    padding: 12px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-button:hover {
+    background-color: #cc5200; /* Matching hover color */
+  }
+  
+  @media (max-width: 768px) {
+    .section-heading {
+      font-size: 1.5rem;
+    }
+  
+    .contact-button {
+      padding: 10px 24px;
+    }
+  }
+  

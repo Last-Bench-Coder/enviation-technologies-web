@@ -1,0 +1,64 @@
+.about-sec {
+    display: flex;
+    background-color: #dcdcdc;
+    padding: 40px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo-box {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .logo-box img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .text-box {
+    flex: 2;
+    color: #333333; /* Professional charcoal gray */
+    padding-left: 40px;
+    position: relative;
+  } 
+  
+  .text-box h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #2c3e50; /* Deep slate blue – professional and elegant */
+  }
+  
+  .text-box p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .read-more-btn {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .read-more-btn:hover {
+    background-color: #cc5200;
+  }
+  
+  @media (max-width: 768px) {
+    .about-sec {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .text-box {
+      padding-left: 0;
+      margin-top: 20px;
+    }
+  }
+  
