@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./HomeAbout.css";
 
 const HomeAbout = () => {
@@ -16,7 +17,7 @@ const HomeAbout = () => {
           a wide spectrum of air pollutants and regulated emissions from virtually all types of
           sources and applications.
         </p>
-        <a href="/about" className="read-more-btn">Read More</a>
+        <Link to="/contact" className="read-more-btn">Read More</Link>
       </div>
     </div>
   );
