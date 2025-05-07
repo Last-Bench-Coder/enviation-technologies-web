@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
 import "./HomeContact.css";
 
 const HomeContact = () => {
@@ -7,9 +8,9 @@ const HomeContact = () => {
       <h2 className="section-heading">
         Know More About Our Products and Services. Get in Touch.
       </h2>
-      <a href="/contact-us" className="contact-button">
+      <Link to="/contact" className="contact-button">
         CONTACT US
-      </a>
+      </Link>
     </div>
   );
 };

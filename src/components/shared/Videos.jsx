@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
 import "./Videos.css";
 
 const Videos = () => {
@@ -18,9 +19,9 @@ const Videos = () => {
       <div className="hero-content">
         <h1 className="display-5 fw-bold">Welcome to Enviation Technologies</h1>
         <p className="lead">Innovating for a greener, cleaner, and sustainable tomorrow.</p>
-        <a href="/about" className="btn btn-success mt-3 px-4 py-2 rounded-pill">
+        <Link to="/about" className="btn btn-success mt-3 px-4 py-2 rounded-pill">
           Learn More
-        </a>
+        </Link>
       </div>
     </section>
   );

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
 import "./HomeProduct.css";
 
 const HomeProduct = () => {
@@ -26,7 +27,7 @@ const HomeProduct = () => {
             dedusters struggle to meet emission limits ≤ 50 mg/Nm³, but the IRRA Cyclone System
             excels in efficiency and compliance with stringent regulations.
           </p>
-          <a href="#" className="read-more-btn">Read More</a>
+          <Link to="/product" className="read-more-btn">Read More</Link>
         </div>
       </div>
     </section>
