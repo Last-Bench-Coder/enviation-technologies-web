@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
 import "./Footer.css";
 
 const Footer = () => {
@@ -7,9 +8,9 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-4 mb-4">
-            <a href="/home">
+            <Link to="/">
               <img src="/images/logo1.png" width="200px" alt="Enviation Logo" />
-            </a>
+            </Link>
             <p className="mt-2 small text-white">
               Enviation Technologies is an organisation offering novel innovative
               concepts to promote environmental friendliness & energy-efficient
@@ -25,19 +26,19 @@ const Footer = () => {
             <ul className="list-unstyled small">
               <li>
                 <i className="bi bi-house-door"></i>
-                <a href="/" className="text-light text-decoration-none">Home</a>
+                <Link to="/" className="text-light text-decoration-none">Home</Link>
               </li>
               <li>
                 <i className="bi bi-info-circle"></i>
-                <a href="/About" className="text-light text-decoration-none">About Us</a>
+                <Link to="/About" className="text-light text-decoration-none">About Us</Link>
               </li>
               <li>
                 <i className="bi bi-envelope"></i>
-                <a href="/contact" className="text-light text-decoration-none">Contact</a>
+                <Link to="/contact" className="text-light text-decoration-none">Contact</Link>
               </li>
               <li>
                 <i className="bi bi-send"></i>
-                <a href="/Home/SubmitQuery" className="text-light text-decoration-none">Submit Query</a>
+                <Link to="/" className="text-light text-decoration-none">Submit Query</Link>
               </li>
             </ul>
           </div>
@@ -46,15 +47,15 @@ const Footer = () => {
             <ul className="list-unstyled small">
               <li>
               <i className="bi bi-info-circle"></i>
-                <a href="#" className="text-light text-decoration-none">Legal Advice</a>
+                <Link to="/" className="text-light text-decoration-none">Legal Advice</Link>
               </li>
               <li>
                 <i className="bi bi-headset"></i>
-                <a href="#" className="text-light text-decoration-none">Support Services</a>
+                <Link to="/" className="text-light text-decoration-none">Support Services</Link>
               </li>
               <li>
                 <i className="bi bi-file-earmark-text"></i>
-                <a href="#" className="text-light text-decoration-none">Documentation Help</a>
+                <Link to="/" className="text-light text-decoration-none">Documentation Help</Link>
               </li>
             </ul>
           </div>
